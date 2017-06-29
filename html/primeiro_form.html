@@ -4,58 +4,50 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <style type="text/css">
-          
-             
-              
-             
-                 
-           #butao{
-               margin-left: 280px;
-               margin-top: 20px;
-           }
-             .blocoSexo{
-                display: inline-block;
-                margin-top: 1.5px;
-             }
-             .blocoCurso{
-                 display: inline-block;
-                 margin-top: 1.5px;
-             }
-            label{display: inline-block;
-                   
-                  width: 250px;
-                  text-align: right;
                   
-              }
+            #botao{
+            margin-left: 280px;
+            margin-top: 20px;
+            }
+            .blocoSexo{
+            display: inline-block;
+            margin-top: 1.5px;
+            }
+            .blocoCurso{
+            display: inline-block;
+            margin-top: 1.5px;
+            }
+            label{
+            display: inline-block;
+            width: 250px;
+            text-align: right;
+            }
             input{
-                 display: inline-block;
-                 margin-top: 3px;
+            display: inline-block;
+            margin-top: 3px;
             }
             form{
-                 width: 500px;
-                 height: 300px;
-                 }
-           
+            width: 500px;
+            height: 300px;
+            margin-top:5%;
+            margin-left: 32%;
+            }
             </style>
             <title>Forms-Materialize</title>
-           
         </head>
+
         <body>
-           
-            <div >
-                <form>
-                    
+            <section>
+                <form name="formulario" id="formulario" method="post" action="#">
                 <div >
                     <label for="email">Endereço de e-mail:</label>
                     <input type="email" name="email" size="30" />
                 </div>
                     
-                    
                 <div >
                     <label for="nome" >Nome:</label>
                     <input type="text" name="nome" size="30" >
                 </div>
-                
                     
                 <div class="blocoSexo">
                     <div class="blocoSexo"><label for="sexo">Sexo:</label></div>
@@ -67,9 +59,6 @@
                         </select>
                         </div>
                 </div>
-                   
-                    
-                    
                             
                 <div class="blocoCurso">
                         <div class="blocoCurso"><label for="curso" >Cursos:</label></div>
@@ -131,13 +120,10 @@
                         </select>
                     </div>
                     
-                    <div = id="butao">
+                    <div id="botao">
                         <button type="submit">Salvar</button>
                     </div>
-                    
-                        
                 </form>
-            </div>  
-            
+            </section>
         </body>
     </html>
