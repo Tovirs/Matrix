@@ -8,6 +8,39 @@
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <!-- Materialize CSS -->
              <link rel="stylesheet" href="css/materialize.css">
+             <style>
+             form{
+                 background-color: #dcedc8 ;
+             }
+              /* label color */
+            .input-field label {
+                color: #000;
+            }
+            /* label focus color */
+            .input-field input[type=text]:focus + label {
+                color: #000;
+            }
+            /* label underline focus color */
+            .input-field input[type=text]:focus {
+                border-bottom: 1px solid #000;
+                box-shadow: 0 1px 0 0 #000;
+            }
+            /* valid color */
+            .input-field input[type=text].valid {
+                border-bottom: 1px solid #000;
+                box-shadow: 0 1px 0 0 #000;
+            }
+            /* invalid color */
+            .input-field input[type=text].invalid {
+                border-bottom: 1px solid #000;
+                box-shadow: 0 1px 0 0 #000;
+            }
+            /* icon prefix focus color */
+            .input-field .prefix.active {
+                color: #000;
+            }
+            
+             </style>
                
         <title>Formulario Materialize</title>
     </head>
@@ -122,9 +155,9 @@
                 </div>
             </div>
         </div>
-         
+  
     </form>
-    <!-- Jquery-->
+             <!-- Jquery-->
     <script src="jquery/jquery-3.2.1.min.js"></script>
     <!-- Materialize JS-->
     <script src="js/materialize.js"> </script>
