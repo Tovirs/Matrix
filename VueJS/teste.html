@@ -10,10 +10,10 @@
 </head>
 
 <body class="row">
-<div id="vueJS">
+
   <!-- your code start -->
-  <div class="input-field col s6" >
-    <select v-model="sexo">
+  <div class="input-field col s6">
+    <select ng-model="getValue">
       <option value="" disabled selected>Choose your option</option>
       <option value="1">Option 1</option>
       <option value="2">Option 2</option>
@@ -21,12 +21,10 @@
     </select>
     <label>Materialize Select</label>
   </div>
-
   <!-- your code end -->
   
   <!--Display result-->
-  <h5 class="col s12">You select : {{obj.sexo}}</h5>
-  </div>
+  <h5 class="col s12">You select : {{getValue}}</h5>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -40,35 +38,9 @@
       $('select').material_select();
     });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
-    <script src="js/app.js"></script>
 
   <!--AngularJS CDN-->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>-->
-
-	
-	<script>
-		new Vue({
-			el: "#vueJS",
-			data: function (){
-				return {
-					aulavuejs: "Projeto Matrix",
-					resultado: "aa",
-					sexo: "",
-						};
-			},
-			methods: {
-			salvar: function (){					
-					localStorage.setItem("cadastro", this.selected);					
-				}				
-			},
-			created: function() {				
-				var valorResultado = localStorage.getItem("cadastro");
-					if(valorResultado){
-						this.resultado = valorResultado;
-					}
-			}
-		});
-	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 </body>
+
 </html>

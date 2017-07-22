@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Forms-Materialize</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="css/materialize.css">
+    </head>
+
+    <body >
+        <table id="app">
+            <tr class="demo" v-for="row in rows" >  
+                <td>{{row.Email}}</td>
+                <td>{{row.Nome}}</td>
+                <td>{{row.Sexo}}</td>
+                <td>{{row.Curso}}</td>
+                <td>{{row.Endereco}}</td>
+                <td>{{row.Complemento}}</td>
+                <td>{{row.cep}}</td>
+                <td>{{row.Municipio}}</td>
+                <td>{{row.UF}}</td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col s6">
+                <div class="btn3">
+                    <a class="waves-effect waves-light btn-large" href="VueJS.html" >Voltar</a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="jquery/jquery-3.2.1.min.js"></script>
+        <!-- Materialize JS-->
+        <script src="js/materialize.js"> </script>
+        
+        <!--Vue JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
+        <script src="js/app2.js"> </script>
+    </body>
+</html>

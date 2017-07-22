@@ -2,7 +2,9 @@
                     new Vue({
                         el: "#vueJS",
                         data: function(){
-                                        return obj={email:"",
+                                        return obj={
+                                                    
+                                                    email:"",
                                                     nome: "",
                                                     sexo:"",
                                                     curso:"",
@@ -15,8 +17,13 @@
                         },
                         methods: {
                         salvar: function(){
-                            stringForm = JSON.stringify(obj);
+                            stringForm =  JSON.stringify(obj);
+                            
                             localStorage.setItem("cadastro",stringForm);
+                        },
+                        incremento: function(){
+
+
                         }
                         },
                         created: function() {				
@@ -33,5 +40,8 @@
                             this.municipio = dados.municipio;
                             this.uf = dados.uf;
 					        }
-			            }
-                        });
+			            },
+                        
+                        ready: function(){
+                            $('select').material_select();
+                        }});
