@@ -1,0 +1,13 @@
+#contato .social ul li{ list-style-type: none; display: inline; padding-left: 15px;	padding-right: 10px;}
+#contato .social ul li a img{  background-size: cover; background-position: center center;border-radius: 50%;box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);}
+#c1{margin-top: 34px;}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
